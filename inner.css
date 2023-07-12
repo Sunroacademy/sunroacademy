@@ -1,0 +1,68 @@
+.about1{
+    /* border: 2px solid rgb(99, 47, 255); */
+    padding:20px;
+}
+
+/* kid page css */
+.kidfeature{
+    margin-top:40px;
+}
+.kidfeature p{
+    padding:5px;
+}
+.feature{
+    /* border: 2px solid greenyellow; */
+    margin-top: 40px;
+    margin-left:20px;
+    padding:10px;
+}
+
+.feature ul li:hover{
+    cursor: pointer;
+}
+.feature ul{
+    padding-top: 10px;
+}
+.feature ul li{
+    padding:10px;
+    list-style: none;
+}
+.feature ol{
+    border:2px solid red;
+}
+.read{
+    margin:20px;
+    margin-left: 40px;
+    text-align: center;
+  
+}
+.read ul li{
+    padding:5px;
+}
+.practice{
+    margin:20px;
+    margin-left: 40px;
+    text-align: center;
+}
+.practice ul li {
+    padding:5px;
+}
+.quiz{
+    margin:20px;
+    margin-left: 40px;
+    text-align: center;
+}
+.quiz ul li{
+    padding:5px;
+}
+.box3 a{
+    text-decoration: none;
+}
+.box3 li{
+    list-style: none;
+}
+.box3 p{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 20px;
+}
