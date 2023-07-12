@@ -1,170 +1,206 @@
  /* for navigation bar */
- #navbar{
-    /* margin-top: 10px; */
-    list-style: none;
-    text-decoration: none;
-    /* border: 2px solid green; */
-    margin:0;
-    padding:0;
-    background-color: black;
-    list-style-type: none;
-    
-}
-#navbar ul{
-    /* border: 2px solid blue; */
-    margin:0px;
-    /* display:flex; */
-    list-style: none;
-    margin-left: 10px;
-    
-}
-#navbar ul li{
-    /* border:2px solid rgb(225, 65, 132); */
-    border-radius: 20px;
-    /* background-color:rgb(226, 149, 48); */
-    padding:10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+ #navbar {
+   /* margin-top: 10px; */
+   list-style: none;
+   text-decoration: none;
+   /* border: 2px solid green; */
+   margin: 0;
+   padding: 0;
+   background-color: black;
+   list-style-type: none;
 
-    display: inline-block;
-}
-#navbar ul li a{
-    color:rgb(191, 152, 152);
-    display: block;
-    text-decoration: none;
+ }
 
-}
-#navbar ul li a:hover{
-  background-color: #1b1414;
-}
-.dropdown-content{
-  display: none;
-  position: absolute;
-  background-color: #181515;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-.dropdown-content a{
-  color:#333;
-  padding:12px 16px;
-  text-decoration: none;
-  display:block;
-  text-align: left;
-}
-.dropdown:hover .dropdown-content{
-  display: block;
-}
-.one h1{
-    color:white;
-    text-align: center;
-}
+ #navbar ul {
+   /* border: 2px solid blue; */
+   margin: 0px;
+   /* display:flex; */
+   list-style: none;
+   margin-left: 10px;
 
+ }
 
-/* for social media icon */
-.socialMedia{
-    /* border:2px solid red; */
-}
-.socialMedia ul{
-    margin:10px;
-}
-.socialMedia ul li {
-    margin:20px;
-    list-style: none;
-}
-.socialMedia ul a{
-    /* border:2px solid blue; */
-    margin:10px;
-    
-    text-decoration: none;
-}
+ #navbar ul li {
+   /* border:2px solid rgb(225, 65, 132); */
+   border-radius: 20px;
+   /* background-color:rgb(226, 149, 48); */
+   padding: 10px;
+   padding-left: 40px;
+   padding-right: 40px;
+   margin: 10px;
+   margin-left: 20px;
+   margin-right: 20px;
+
+   display: inline-block;
+ }
+
+ #navbar ul li a {
+   color: rgb(191, 152, 152);
+   display: block;
+   text-decoration: none;
+
+ }
+
+ #navbar ul li a:hover {
+   background-color: #1b1414;
+ }
+
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #181515;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+ }
+
+ .dropdown-content a {
+   color: #333;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+ }
+
+ .dropdown:hover .dropdown-content {
+   display: block;
+ }
+
+ .one h1 {
+   color: white;
+   text-align: center;
+ }
 
 
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 20px;
-    border-radius: 40px;
-  }
-  
-  .fa:hover {
-      opacity: 0.7;
-  }
-  
-  .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  
-  .fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
-  
-  .fa-google {
-    background: #dd4b39;
-    color: white;
-  }
-  
-  .fa-linkedin {
-    background: #007bb5;
-    color: white;
-  }
-  
-  .fa-youtube {
-    background: #bb0000;
-    color: white;
-  }
-  
-  .fa-instagram {
-    background: #125688;
-    color: white;
-  }
-.socialMedia{
-    justify-content: center;
-    text-align: center;
-    background-color: black;
-}
+ /* for social media icon */
+ .socialMedia {
+   /* border:2px solid red; */
+ }
 
-/* for copyright */
-.copyright{
-    margin:15px;
-    padding:15px;
-    background-color: rgba(26, 12, 12, 0.2);
-    color:white;
-    text-align: center;
-    size:18px;
-}
-.about{
-    border:2px solid red;
-    border-radius: 10px;
-    margin:10px;
-    padding:2px;
-    height:600px;
-}
-.mission{
-    border:2px solid red;
-    border-radius: 10px;
-    margin:10px;
-    padding:2px;
-}
-.vision{
-    border:2px solid red;
-    border-radius: 10px;
-    margin:10px;
-    padding:2px;
-}
-.box1 h2{
-    text-align: center;
-}
-.box2 h1{
-    text-align: center;
-}
-.box3 h2{
-    text-align: center;
-}
+ .socialMedia ul {
+   margin: 10px;
+ }
+
+ .socialMedia ul li {
+   margin: 20px;
+   list-style: none;
+ }
+
+ .socialMedia ul a {
+   /* border:2px solid blue; */
+   margin: 10px;
+
+   text-decoration: none;
+ }
+
+
+ .fa {
+   padding: 20px;
+   font-size: 30px;
+   width: 50px;
+   text-align: center;
+   text-decoration: none;
+   margin: 5px 20px;
+   border-radius: 40px;
+ }
+
+ .fa:hover {
+   opacity: 0.7;
+ }
+
+ .fa-facebook {
+   background: #3B5998;
+   color: white;
+ }
+
+ .fa-twitter {
+   background: #55ACEE;
+   color: white;
+ }
+
+ .fa-google {
+   background: #dd4b39;
+   color: white;
+ }
+
+ .fa-linkedin {
+   background: #007bb5;
+   color: white;
+ }
+
+ .fa-youtube {
+   background: #bb0000;
+   color: white;
+ }
+
+ .fa-instagram {
+   background: #125688;
+   color: white;
+ }
+
+ .socialMedia {
+   justify-content: center;
+   text-align: center;
+   background-color: black;
+ }
+
+ /* for copyright */
+ .copyright {
+   margin: 15px;
+   padding: 15px;
+   background-color: rgba(26, 12, 12, 0.2);
+   color: white;
+   text-align: center;
+   size: 18px;
+ }
+
+ .about {
+   /* border: 2px solid red; */
+   border-radius: 10px;
+   margin: 10px;
+   margin-top:20px;
+   margin-left:20px;
+   padding: 2px;
+   height: 600px;
+ }
+ .about p{
+  padding-top:10px;
+ }
+
+ .mission {
+   /* border: 2px solid red; */
+   border-radius: 10px;
+   margin: 10px;
+   padding: 2px;
+ }
+ .mission ul{
+  padding:10px;
+ }
+ .mission li{
+  list-style: none;
+ }
+
+ .vision {
+   /* border: 2px solid red; */
+   border-radius: 10px;
+   margin: 10px;
+   padding: 2px;
+ }
+ .vision ul{
+  padding:10px;
+ }
+ .vision li{
+  list-style: none;
+ }
+
+
+ .box1 h2 {
+   text-align: center;
+ }
+
+ .box2 h1 {
+   text-align: center;
+ }
+
+ .box3 h2 {
+   text-align: center;
+ }
