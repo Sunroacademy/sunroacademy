@@ -22,7 +22,7 @@
     "socialMedia socialMedia socialMedia socialMedia"
     "copyright copyright copyright copyright";
     /* text-align: center; */
-    font-size: 1.2rem;
+/*     font-size: 1.2rem; */
 /*     height:1500px; */
 }
 
@@ -129,7 +129,7 @@ footer{
         grid-template-rows: 0.2fr 0.2fr 2fr 2fr 2fr 1.5fr 0.2fr 0.2fr;
         grid-template-areas: "main" "navbar" "box2" "box1" "box3" "footer" "socialMedia"
                              "copyright";
-        height:2000px;
+        height:100vh;
         
     }
 }
