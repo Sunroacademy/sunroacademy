@@ -12,15 +12,15 @@
     height:100vh;
     grid-gap: 0.2rem;
     color:white;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.2fr 0.2fr 2fr 1.5fr 0.3fr 0.1fr;
     grid-template-areas:
-     "main main main main"
-    "navbar navbar navbar navbar"
-    "box1 box2 box2 box3"
-    "footer footer footer footer"
-    "socialMedia socialMedia socialMedia socialMedia"
-    "copyright copyright copyright copyright";
+     "main main main"
+    "navbar navbar navbar"
+    "box1 box2 box3"
+    "footer footer footer"
+    "socialMedia socialMedia socialMedia"
+    "copyright copyright copyright";
     /* text-align: center; */
 /*     font-size: 1.2rem; */
 /*     height:1500px; */
@@ -130,6 +130,6 @@ footer{
         grid-template-areas: "main" "navbar" "box2" "box1" "box3" "footer" "socialMedia"
                              "copyright";
         height:100vh;
-        
+        font-size:1.5rem;
     }
 }
