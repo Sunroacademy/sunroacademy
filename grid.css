@@ -1,3 +1,4 @@
+/* In it css of grid of container, grid area, logo and tittle, box2 image and h1, footer, copyright and phone view is present */
 *{
     padding:0;
     margin:0;
@@ -10,17 +11,16 @@
     
     display: grid;
     height:100vh;
-    grid-gap: 0.2rem;
+    grid-gap: 0.1rem;
     color:white;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 0.2fr 2fr 1.5fr 0.3fr 0.1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 1.5fr 1fr 0.1fr;
     grid-template-areas:
-     "main main main"
-    "navbar navbar navbar"
-    "box1 box2 box3"
-    "footer footer footer"
-    "socialMedia socialMedia socialMedia"
-    "copyright copyright copyright";
+     "main main"
+    "navbar navbar"
+    "box2 box3"
+    "footer footer"
+    "copyright copyright";
     /* text-align: center; */
 /*     font-size: 1.2rem; */
 /*     height:1500px; */
@@ -31,18 +31,22 @@ main{
     background-color:rgb(106 86 86);
     grid-area: main;
 }
+
+/* for social media + logo */
+.logo{
+    display:flex;
+    justify-content: center;
+}
+
+
 /* logo */
-main img{
+
+#logo{
     height:110px;
     width:110px;
     border-radius: 70px;
 }
-.logo{
-    display:flex;
-    justify-content: center;
-    margin-left:10px;
-    margin-right: 10px;
-}
+
 .tittle{
     margin-top:10px;
     font-size: 50px;
@@ -54,45 +58,88 @@ main img{
     margin-left: 20px;
 }
 
+/* for social media */
+.socialMedia{
+    margin-top:10px;
+    margin-left:40px;
+    /* border:2px solid green; */
+}
+
+#socialMedia a{
+    margin-left:20px;
+    /* padding-left:10px; */
+}
+
+.login{
+    /* border:2px solid red; */
+    margin-top:15px;
+    text-align: center;
+    margin-bottom:10px;
+}
+.login button{
+    cursor: pointer;
+    font-size: 20px;
+    padding:5px;
+    color:white;
+    background-color: rgb(24, 24, 50);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.login button:hover{
+    background-color: rgb(68, 46, 46);
+    border-radius: 30px;
+}
+
+
+/* nav area */
 nav{
     background-color: black;
     grid-area: navbar;
 }
 
-.box1{
-    background-color:rgb(41 47 41);
-    grid-area: box1;
-}
+
+/* box 2 area */
 .box2{
     background-color: rgb(21, 7, 7);
     grid-area: box2;
+    /* justify-content: center; */
+}
+
+/* for box 2 image css */
+.box2 img{
+    height:400px;
+    width: 600px;
 
 }
-.box2 img{
-    height:500px;
-    margin:10px;
-}
+
+.box2 h1 {
+    text-align: center;
+  }
+
+ /* box 3 area  */
 .box3{
     background-color: rgb(41 47 41);
     grid-area: box3;
 }
+
+/* footer area */
 footer{
     background-color: blue;
     grid-area: footer;
 }
-.socialMedia{
-    /* background-color: blue; */
-    grid-area: socialMedia;
-}
+
+/* copyright area */
+
 .copyright{
-    /* background-color: red; */
+    background-color: rgb(63, 14, 63);
     grid-area: copyright;
 }
 
 /* for footer */
 #footer{
     /* border:2px solid red; */
-    height:400px;
     background-color: black;
   
 }
@@ -121,13 +168,26 @@ footer{
     text-decoration: none;
 }
 
+/* for copyright */
+.copyright {
+    padding: 5px;
+    color: white;
+    text-align: center;
+    size: 24px;
+  }
+
+  .copyright a{
+    color: white;
+  }
+  
+
 
 /* for phone view */
 @media only screen and (max-width:600px){
     .container{
         grid-template-columns: 1fr ;
-        grid-template-rows: 0.2fr 0.2fr 2fr 2fr 2fr 1.5fr 0.2fr 0.2fr;
-        grid-template-areas: "main" "navbar" "box2" "box1" "box3" "footer" "socialMedia"
+        grid-template-rows: 0.2fr 0.2fr 1.5fr 1.5fr 1fr 0.2fr;
+        grid-template-areas: "main" "navbar" "box2" "box3" "footer"
                              "copyright";
         height:100vh;
         font-size:1.5rem;
