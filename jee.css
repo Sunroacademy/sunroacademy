@@ -58,8 +58,13 @@ nav{
 }
 
 footer{
-    background-color: blue;
+    background-color: rgb(190, 76, 190);
     grid-area: footer;
+    text-align: center;
+}
+
+footer a{
+  color:white;
 }
 
 
