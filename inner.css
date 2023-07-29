@@ -1,68 +1,93 @@
-.about1{
-    /* border: 2px solid rgb(99, 47, 255); */
-    padding:20px;
+/* In it css of common for box 3, specal for box 3 is present */
+
+
+
+/* for all box 3 */
+
+.box3 h2 {
+    margin-top: 20px;
+    text-align: center;
 }
+   
+.box3 ul{
+    margin-top:20px;
+}
+
+.box3 ul li{
+    margin: 5px;
+    margin-top: 10px;
+    list-style: none;
+    border: 2px solid palegoldenrod;
+    border-radius:5px;
+    padding-left: 2px;
+    padding-right:2px;
+}
+
+.box3 ul li:hover{
+    cursor: pointer;
+    
+}
+
 
 /* kid page css */
 .kidfeature{
-    margin-top:40px;
-}
-.kidfeature p{
-    padding:5px;
-}
-.feature{
-    /* border: 2px solid greenyellow; */
-    margin-top: 40px;
-    margin-left:20px;
-    padding:10px;
+    margin-top:20px;
 }
 
-.feature ul li:hover{
-    cursor: pointer;
-}
-.feature ul{
-    padding-top: 10px;
-}
+
+
+
+/* for about of class 1 to 12  */
+
 .feature ul li{
     padding:10px;
     list-style: none;
 }
-.feature ol{
-    border:2px solid red;
+
+
+/* kids + class 1 to 12 */
+.box3 a{
+    text-decoration: none;
+    color:white;
+    background-color: rgb(69, 69, 113);
+    border:2px solid blueviolet;
+    border-radius: 6px;
+    padding:4px;
+    margin-top: 5px;
 }
+.box3 a:hover{
+    background-color: rgb(27, 51, 83);
+}
+
+.box3 p{
+    font-size: 1.5rem;
+    margin:5px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
 .read{
     margin:20px;
-    margin-left: 40px;
     text-align: center;
   
 }
 .read ul li{
     padding:5px;
+    border:none;
 }
 .practice{
     margin:20px;
-    margin-left: 40px;
     text-align: center;
 }
 .practice ul li {
     padding:5px;
+    border:none;
 }
 .quiz{
     margin:20px;
-    margin-left: 40px;
     text-align: center;
 }
 .quiz ul li{
     padding:5px;
-}
-.box3 a{
-    text-decoration: none;
-}
-.box3 li{
-    list-style: none;
-}
-.box3 p{
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 20px;
+    border:none;
 }
