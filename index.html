@@ -1,252 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- style css for styling -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- grid css for griding -->
-    <link rel="stylesheet" type="text/css" href="grid.css">
-    <!-- inner css for specific and common styling -->
-    <link rel="stylesheet" type="text/css" href="inner.css">
-    
+     <!-- css link for bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <style>
+        body{
+            background-color: antiquewhite;
+        }
+     </style>
 </head>
-
 <body>
-    <!-- whole container -->
- <div class="container">
-
-        <!-- for logo and tittle -->
-    <main class="logo">
-            <div><img id="logo" src="logo1.jpeg" alt="sunro academy"></div>
-            <div><span class="tittle">Sunro Academy<br><span class="subtittle">For quality of education</span></div>
-        <div class="socialMedia">
-            <p id="socialMedia">
-                <a href="https://www.instagram.com/sunroacademy/" target="_blank"><img src="instagram.png" alt="google" height="30px" width="40px"></a>
-                <a href="https://www.google.com" target="_blank"><img src="facebook.png" alt="google" height="30px" width="40px"></a>
-                <a href="https://www.google.com" target="_blank"><img src="linkedin.png" alt="google" height="30px" width="40px"></a>
-                <a href="https://www.google.com" target="_blank"><img src="twitter.png" alt="google" height="30px" width="40px"></a>
-                <a href="https://www.youtube.com/channel/UCVgoIRl51mVz6j5GsHpnRzg" target="_blank"><img src="youtube.png" alt="google" height="30px" width="40px"></a>
-            </p>
-            <p class="login">
-                <button type="submit">Login</button>
-            </p>
-        </div>
-    </main>
-
-
-        <!-- navigation bar -->
-        <nav id="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li>
-                    <a href="jee.html">IIT-JEE</a>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Academic Division</a>
-                    <div class="dropdown-content">
-                        <a href="kids.html">kids care</a>
-                        <a href="class1.html">class 1&2</a>
-                        <a href="class3.html">class 3to5</a>
-                        <a href="class6.html">class 6to8</a>
-                        <a href="class9.html">class 9&10</a>
-                        <a href="class11.html">class 11&12</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Extracarricular</a>
-                    <div class="dropdown-content">
-                        <a href="sports.html">Sports</a>
-                        <a href="cultural.html">Cultural</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Fascilities</a>
-                    <div class="dropdown-content">
-                        <a href="#">library</a>
-                        <a href="#">labs</a>
-                        <a href="#">online resources</a>
-                        <a href="#">computer</a>
-                        <a href="#">transportation</a>
-                        <a href="#">doubt</a>
-                    </div>
-                </li>
-              
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Competetive</a>
-                    <div class="dropdown-content">
-                        <a href="jee.html">JEE</a>
-                        <a href="neet.html">NEET</a>
-                        <a href="upsc.html">UPSC</a>
-                        <a href="other.html">Other</a>
-                    </div>
-                </li>
-                
+    
+      <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Sunro Academy</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#feature">Feature</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  School Academic
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Kids Care</a></li>
+                  <li><a class="dropdown-item" href="#">1 to 2</a></li>                 
+                  <li><a class="dropdown-item" href="#">3 to 5</a></li>
+                  <li><a class="dropdown-item" href="#">6 to 8</a></li>
+                  <li><a class="dropdown-item" href="#">9 to 10</a></li>
+                  <li><a class="dropdown-item" href="#">11 to 12</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://indiaspacetravel.github.io/JEE-Main/">JEE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
             </ul>
-        </nav>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
 
+      <!-- main -->
+      <div class="container">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+     
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="online.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="400" height="400" loading="lazy">
+        </div>
         
-
-        <!-- box2->for gallary purpose -->
-        <div class="box2">
-            <h1>Gallary</h1>
-            <img src="school1.jpg" alt="sunro academy">
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Sunro Academy</h1>
+          <h2>For Quality of Education</h2>
+          <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Mission</button>
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Vision</button>
+          </div>
         </div>
+      </div>
+</div>
 
-        <!-- box3->for about, mission and vision -->
-        <div class="box3">
-            <h2>About</h2>
-            <ul class="about">
-                <li>
-                    <details>
-                        <summary>About</summary>
-                            <li>We believe purpose of true education is all round development.</li>
-                    <li>Be a leading academy recognized for commitment to excellence in education.</li>
-                    <li>Currently we provide online resouces for the students</li>
-                    <li>This website itself a proof of providing online resources</li>
-                    <li>We further start offline classes</li>
-                    <li>I think the light of education should reach to each individual</li>
-                    <li>Further we will provide free education to underprivileged student</li>
-                    <li>We will provide all types of course</li>
-                    <li>We will not only educate your child but also nurture them to become a good human being</li>
-                        
-                    </details>
-                </li>
-            </ul>
+<!-- feature -->
 
-          <h2>Mission and vision</h2>
+    <div class="container" id="feature">
+        <h1>Features</h1>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="online.png" height="250px" width="300px">
+            <div class="card-body">
+                <h3>Kids Care</h3>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                
+                </div>
             
-                <ul class="mission">
-                    <li>
-                        <details>
-                            <summary>mission</summary>
-                            <li>Provide a transformative and empowering learning experience.</li>
-                        <li>Foster the growth and development of individuals from diverse backgrounds.</li>
-                        <li>Equip students with the knowledge, skills, and mindset to excel in their chosen fields.</li>
-                        <li>Prepare students to make a positive impact in society.</li>
-                        </details>
-                    </li>
-                </ul>
-    
-            
-            
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="online.png" height="250px" width="300px">
+            <div class="card-body">
+                <h3>class 1 to 5</h3>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+             
+                </div>
               
-                <ul class="vision">
-                    <li>
-                        <details>
-                            <summary>vision</summary>
-                            <li>Create a vibrant learning community that nurtures curiosity, critical thinking, creativity, and
-                                collaboration.</li>
-                            <li>Prepare students to become lifelong learners and leaders.</li>
-                            <li>Encourage students to contribute meaningfully to their communities and the world.</li>
-                            <li>Dedicate to personalized education, cutting-edge pedagogy, and a supportive environment.</li>
-                            <li>Inspire and empower every individual to reach their full potential.</li>
-                        </details>
-                    </li>
-                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="online.png" height="250px" width="300px">
+            <div class="card-body">
+                <h3>Class 6 to 12</h3>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="online.png" height="250px" width="300px">
+            <div class="card-body">
+                <h3>JEE</h3>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                
+                </div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="online.png" height="250px" width="300px">
+            <div class="card-body">
+                <h3>NEET</h3>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                 
+                </div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="online.png" height="250px" width="300px">
+            <div class="card-body">
+                <h3>Other Competetive Exam</h3>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+              
+                </div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="online.png" height="250px" width="300px">
+            <div class="card-body">
+                <h3>Sports</h3>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="online.png" height="250px" width="300px">
+            <div class="card-body">
+                <h3>Music</h3>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                
+                </div>
+          
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="online.png" height="250px" width="300px">
+            <div class="card-body">
+                <h3>Skill</h3>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+            
+                </div>
+           
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     
-
+    <!-- footer -->
+    <div class="container" id="contact">
+    <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
         </div>
-
-        <!-- footer -->
-        <footer id="footer">
-            <div class="social">
-                <h2>Academics</h2>
-                <ul class="link">
-                    <li>
-                        <a href="#">Academic time-table</a>
-                    </li>
-                    <li>
-                        <a href="#">Academic calender</a>
-                    </li>
-                    <li>
-                        <a href="#">Notice</a>
-                    </li>
-                    <li>
-                        <a href="#">Club</a>
-                    </li>
-                    <li>
-                        <a href="#">Faculty</a>
-                    </li>
-                    <li>
-                        <a href="#">Staff</a>
-                    </li>
-                    <li>
-                        <a href="#">Team</a>
-                    </li>
-                    <li>
-                        <a href="#">It cell</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="social">
-                <h2>Quick links</h2>
-                <ul class="link">
-                    <li>
-                        <a href="#">Admission</a>
-                    </li>
-                    <li>
-                        <a href="#">Entrance exam</a>
-                    </li>
-                    <li>
-                        <a href="#">Result</a>
-                    </li>
-                    <li>
-                        <a href="#">Faculty recruitment</a>
-                    </li>
-                    <li>
-                        <a href="#">Gender cell</a>
-                    </li>
-                    <li>
-                        <a href="#">carrier/job</a>
-                    </li>
-                    <li>
-                        <a href="#">policies</a>
-                    </li>
-
-
-                </ul>
-            </div>
-            <div class="social">
-                <h2>Contact us</h2>
-                <ul class="link">
-                    <li>
-                        <a href="#">contact</a>
-                    </li>
-                    <li>
-                        <a href="#">feedback</a>
-                    </li>
-
-                </ul>
-            </div>
-            <div class="social">
-                <h2>Our Team</h2>
-                <ul class="link">
-                    <li>
-                        <a href="#">Faculty corner</a>
-                    </li>
-                    <li>
-                        <a href="#">Staff corner</a>
-                    </li>
-                    <li>
-                        <a href="#">Student corner</a>
-                    </li>
-            </div>
-        </footer>
-
-        <!-- copyright -->
-        <div class="copyright">
-            <p>
-                © 2023 Copyright:
-                <a href="#">sunroacademy.com</a>
-            </p>
+    
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>© 2023 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
         </div>
+      </footer>
+      </div>
 
- </div>
-
-
+      <!-- javascript link for bootstrap -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
-
 </html>
